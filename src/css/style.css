@@ -97,7 +97,7 @@ Version: 1.0
 .ao-bg-red-espresso { background-color: rgb(94, 23, 30); }
 .ao-h-8 { height: 2rem; }
 .ao-h-screen { height: 100vh; }
-.ao-max-h-section { max-height: 700px; }
+.ao-min-h-section { min-height: 575px; }
 .ao-w-full { width: 100%; }
 .ao-m-0 { margin: 0; }
 .ao-p-0 { padding: 0; }
@@ -112,6 +112,10 @@ Version: 1.0
 .ao-items-center { align-items: center; }
 .ao-text-center { text-align: center; }
 .ao-text-xs { font-size: 0.75rem; }
+.ao-text-base { font-size: 1.00rem; }
+.ao-text-r2xl { font-size: 1.50em; }
+.ao-text-r6xl { font-size: 4.00em; }
+.ao-text-s-black { text-shadow: 0 2px 8px #000; }
 .ao-tracking-wider { letter-spacing: 0.05em; }
 
 
@@ -690,19 +694,19 @@ ul.footer_social li a i:hover {
 /* 			               04. HOME                           */
 /* ========================================================== */
 
-/* .home-section {
+.home-section {
     width: 100%;
     position: relative;
     text-align: center;
-      padding-top: 240px;
-      padding-bottom: 200px;
-    background: url(../images/bg10.jpg) top center no-repeat;
+      /* padding-top: 240px;
+      padding-bottom: 200px; */
+    background: url(../images/research.jpg) center center no-repeat; /* Photo by Startup Stock Photos from Pexels */
     background-size: cover;
-} */
+}
 
 .home-section-overlay{
     width: 100%;
-    opacity: 0.60;
+    opacity: 0.78;
     position: absolute;
     top: 0;
     left: 0;
@@ -716,7 +720,7 @@ ul.footer_social li a i:hover {
 
 .home-section p{
     margin-bottom: 30px;
-    font-size: 20px;
+    /* font-size: 20px; */
     line-height: 32px;
     font-weight: 400;
     color: #fff;
