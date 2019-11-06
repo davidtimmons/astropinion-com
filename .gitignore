@@ -1,3 +1,7 @@
+# Custom
+
+*.Identifier
+
 # Logs
 logs
 *.log
