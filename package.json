@@ -1,0 +1,40 @@
+{
+  "name": "astropinion-com",
+  "version": "1.0.0",
+  "author": "Astropinion",
+  "description": "Source files for a basic Astropinion website.",
+  "private": true,
+  "license": "UNLICENSED",
+  "homepage": "https://astropinion.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidtimmons/astropinion-com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidtimmons/astropinion-com/issues"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "build": "yarn build:clear && yarn build:copy && yarn build:bundle",
+    "build:bundle": "parcel build --out-dir 'docs' --target 'browser' src/*.html src/sem/*.html",
+    "build:clear": "find docs/ -type f -delete",
+    "build:copy": "find src/ | grep -P 'CNAME|.*\\.(ico|png|txt|webmanifest|xml)' | xargs cp -t docs/",
+    "serve": "yarn serve:clear && yarn serve:bundle",
+    "serve:bundle": "parcel --no-cache --out-dir 'dev' --target 'browser' src/*.html src/sem/*.html",
+    "serve:clear": "find dev/ -type f -delete",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0",
+    "tailwindcss": "^1.1.3",
+    "wow.js": "^1.2.2"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.3.0",
+    "parcel-bundler": "^1.12.4",
+    "postcss-preset-env": "^6.7.0"
+  }
+}

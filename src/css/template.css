@@ -5,9 +5,8 @@ Author Name: Epic Themes
 Version: 1.0
 */
 
-/* --- TABLE OF CONTENT
+/* --- TABLE OF CONTENTS
 
-00. ASTROPINION
 01. GENERAL LAYOUT
 02. MENU-NAV
 03. FOOTER
@@ -31,93 +30,6 @@ Version: 1.0
 11. MEDIA QUERIES
 
 --- */
-
-/* ========================================================== */
-/*                         00. ASTROPINION                    */
-/* ========================================================== */
-
-/**
- * This is the full Astropinion word logo used in spaces large enough to see it clearly.
- *
- * 1. Displays the logo on a very dark or black background.
- * 2. Displays the logo on a very light or white background.
- */
-.ao-logo {
-    fill: currentColor;
-}
-
- /* [1] */
-.ao-logo.ao-logo--dark .ao-logo__primary {
-    fill: rgb(252, 61, 33);
-}
-
-.ao-logo.ao-logo--dark .ao-logo__secondary {
-    fill: rgb(255, 255, 255);
-}
-
-.ao-logo.ao-logo--dark .ao-logo__accent {
-    fill: rgb(255, 255, 255);
-}
-
-.ao-logo.ao-logo--dark .ao-logo__tm {
-    fill: rgb(252, 171, 33);
-}
-
- /* [2] */
-.ao-logo.ao-logo--red .ao-logo__primary {
-    fill: rgb(252, 61, 33);
-}
-
-.ao-logo.ao-logo--red .ao-logo__secondary {
-    fill: rgb(252, 61, 33);
-}
-
-.ao-logo.ao-logo--red .ao-logo__accent {
-    fill: rgb(252, 61, 33);
-}
-
-.ao-logo.ao-logo--red .ao-logo__tm {
-    fill: rgb(252, 61, 33);
-}
-
-/**
- * Completely remove from the flow but leave available to screen readers.
- */
-.ao-is-vhidden {
-    position: absolute !important;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    border: 0;
-    clip: rect(1px, 1px, 1px, 1px); 
-}
-
-.ao-bg-black { background-color: rgb(0, 0, 0) !important; }
-.ao-bg-red-espresso { background-color: rgb(94, 23, 30); }
-.ao-h-8 { height: 2rem; }
-.ao-h-screen { height: 100vh; }
-.ao-min-h-section { min-height: 575px; }
-.ao-w-full { width: 100%; }
-.ao-m-0 { margin: 0; }
-.ao-p-0 { padding: 0; }
-.ao-pt-4 { padding-top: 1rem; }
-.ao-absolute { position: absolute; }
-.ao-relative { position: relative; }
-.ao-left-0 { left: 0; }
-.ao-top-0 { top: 0; }
-.ao-top-m300 { top: -300px; }
-.ao-z-m1000 { z-index: -1000; }
-.ao-flex { display: flex; }
-.ao-items-center { align-items: center; }
-.ao-text-center { text-align: center; }
-.ao-text-xs { font-size: 0.75rem; }
-.ao-text-base { font-size: 1.00rem; }
-.ao-text-r2xl { font-size: 1.50em; }
-.ao-text-r6xl { font-size: 4.00em; }
-.ao-text-s-black { text-shadow: 0 2px 8px #000; }
-.ao-tracking-wider { letter-spacing: 0.05em; }
-
 
 /* ========================================================== */
 /*                         01. GENERAL LAYOUT                 */
