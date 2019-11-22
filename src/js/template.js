@@ -6,13 +6,13 @@ $(window).on('load', function(){
 	/*   Navigation Background Color                              */
 	/* ========================================================== */
 	
-	$(window).on('scroll', function() {
-		if($(this).scrollTop() > 450) {
-			$('.navbar-fixed-top').addClass('opaque');
-		} else {
-			$('.navbar-fixed-top').removeClass('opaque');
-		}
-	});
+	// $(window).on('scroll', function() {
+	// 	if($(this).scrollTop() > 200) {
+	// 		$('.navbar-fixed-top').addClass(['theme-light']);
+	// 	} else {
+	// 		$('.navbar-fixed-top').removeClass(['theme-light']);
+	// 	}
+	// });
  
 	
 	/* ========================================================== */
@@ -60,9 +60,10 @@ $(window).on('load', function(){
 		//form.validate();
 		form.submit(function(e) {
 			if (!e.isDefaultPrevented()) {
-				jQuery.post(this.action,{
-					'email':$('input[name="nf_email"]').val(),
-				},function(data){
+				jQuery.post(this.action, {
+					'email': $('input[name="EMAIL"]').val(),
+				}, function(data){
+					console.log(data);
 					form.fadeOut('fast', function() {
 						$(this).siblings('p.newsletter_success_box').show();
 					});
@@ -77,49 +78,49 @@ $(window).on('load', function(){
 	/*   Register                                                 */
 	/* ========================================================== */
 	
-	$('#register-form').each( function(){
-		var form = $(this);
-		//form.validate();
-		form.submit(function(e) {
-			if (!e.isDefaultPrevented()) {
-				jQuery.post(this.action,{
-					'names':$('input[name="register_names"]').val(),
-					'phone':$('input[name="register_phone"]').val(),
-					'email':$('input[name="register_email"]').val(),
-					'ticket':$('select[name="register_ticket"]').val(),
-				},function(data){
-					form.fadeOut('fast', function() {
-						$(this).siblings('p.register_success_box').show();
-					});
-				});
-				e.preventDefault();
-			}
-		});
-	})
+	// $('#register-form').each( function(){
+	// 	var form = $(this);
+	// 	//form.validate();
+	// 	form.submit(function(e) {
+	// 		if (!e.isDefaultPrevented()) {
+	// 			jQuery.post(this.action,{
+	// 				'names':$('input[name="register_names"]').val(),
+	// 				'phone':$('input[name="register_phone"]').val(),
+	// 				'email':$('input[name="register_email"]').val(),
+	// 				'ticket':$('select[name="register_ticket"]').val(),
+	// 			},function(data){
+	// 				form.fadeOut('fast', function() {
+	// 					$(this).siblings('p.register_success_box').show();
+	// 				});
+	// 			});
+	// 			e.preventDefault();
+	// 		}
+	// 	});
+	// })
 	
 	
 	/* ========================================================== */
 	/*   Contact                                                  */
 	/* ========================================================== */
 
-	$('#contact-form').each( function(){
-		var form = $(this);
-		//form.validate();
-		form.submit(function(e) {
-			if (!e.isDefaultPrevented()) {
-				jQuery.post(this.action,{
-					'names':$('input[name="contact_names"]').val(),
-					'subject':$('input[name="contact_subject"]').val(),
-					'email':$('input[name="contact_email"]').val(),
-					'phone':$('input[name="contact_phone"]').val(),
-					'message':$('textarea[name="contact_message"]').val(),
-				},function(data){
-					form.fadeOut('fast', function() {
-						$(this).siblings('p').show();
-					});
-				});
-				e.preventDefault();
-			}
-		});
-	})
+	// $('#contact-form').each( function(){
+	// 	var form = $(this);
+	// 	//form.validate();
+	// 	form.submit(function(e) {
+	// 		if (!e.isDefaultPrevented()) {
+	// 			jQuery.post(this.action,{
+	// 				'names':$('input[name="contact_names"]').val(),
+	// 				'subject':$('input[name="contact_subject"]').val(),
+	// 				'email':$('input[name="contact_email"]').val(),
+	// 				'phone':$('input[name="contact_phone"]').val(),
+	// 				'message':$('textarea[name="contact_message"]').val(),
+	// 			},function(data){
+	// 				form.fadeOut('fast', function() {
+	// 					$(this).siblings('p').show();
+	// 				});
+	// 			});
+	// 			e.preventDefault();
+	// 		}
+	// 	});
+	// })
 });

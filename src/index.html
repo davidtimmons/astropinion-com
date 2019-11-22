@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en-US">
 
 <head>
     <meta charset="utf-8">
@@ -7,33 +7,33 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
 
-    <title>Qualitative Research Tools for Your Business | Astropinion</title>
+    <title>A simple panel management tool for user research | Astropinion</title>
 
-    <!-- Loading Bootstrap -->
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap Styles -->
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Loading Template CSS -->
-    <!-- <link href="css/style.css" rel="stylesheet"> -->
-    <!-- <link href="css/animate.css" rel="stylesheet"> -->
-    <!-- <link href="css/style-magnific-popup.css" rel="stylesheet"> -->
+    <!-- Template Styles -->
+    <link href="../node_modules/animate.css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
 
-    <!-- Awsome Fonts -->
-    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <!-- Icons -->
+    <link rel="stylesheet" href="./css/all.min.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dosis:500,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,700" rel="stylesheet">
 
-    <!-- Font Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico">
 </head>
 
 <body>
+
     <!--begin header -->
     <header class="header">
 
         <!--begin navbar-fixed-top -->
-        <nav class="navbar navbar-default navbar-fixed-top ao-bg-black">
+        <nav class="navbar navbar-default navbar-fixed-top theme-dark opaque">
             
             <!--begin container -->
             <div class="container">
@@ -42,62 +42,52 @@
                 <nav class="navbar navbar-expand-lg">
 
                     <!--begin logo -->
-                    <a class="navbar-brand ao-is-vhidden" href="#">Astropinion</a>
-                    <svg class="ao-logo ao-logo--dark h-8" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.25 16.234"><title>Astropinion Logo</title><desc>Image of the Astropinion logo.</desc><g><polygon class="ao-logo__primary" points="8.137,16.235 10.644,10.897 13.154,16.236"/><path class="ao-logo__primary" d="M26.989,4.724h12.803V0.006H26.989c-3.96,0-6.21,1.342-6.21,5.128 c0,3.787,2.25,5.128,6.21,5.128h5.084c0.541,0,0.909,0.172,0.909,0.605c0,0.477-0.368,0.648-0.909,0.648H19.077L13.674,0.006H7.617 L0,16.234h5.583l5.063-10.776l5.063,10.776h5.069h0.513h10.782c3.96,0,6.211-1.342,6.211-5.128c0-3.787-2.251-5.128-6.211-5.128 h-5.084c-0.542,0-0.909-0.173-0.909-0.605C26.08,4.896,26.447,4.724,26.989,4.724z"/><path class="ao-logo__primary" d="M60.616,0.006v4.718h-6.923v11.511h-5.323V4.724h-6.924V0.006H60.616z"/><path class="ao-logo__primary" d="M80.77,6.346c0,2.986-1.147,4.761-3.224,5.626l3.613,4.263H74.82l-3.008-3.548h-4.219 v3.548H62.27V0.006h10.862C78,0.006,80.77,1.672,80.77,6.346z M67.592,4.724v3.246h5.54c1.428,0,2.315-0.455,2.315-1.624 c0-1.168-0.887-1.622-2.315-1.622H67.592z"/><path class="ao-logo__primary ao-logo__crescent" d="M94.801,2.75c6.575,0,11.927,5.22,12.148,11.74 c0.123-0.699,0.19-1.417,0.19-2.152C107.139,5.524,101.616,0,94.801,0S82.462,5.524,82.462,12.337c0,0.735,0.067,1.453,0.191,2.152 C82.874,7.969,88.226,2.75,94.801,2.75z"/><path class="ao-logo__accent ao-logo__star" d="M90.271,11.578c0,0,2.324,0.003,3.458,1.214c1.083,1.158,1.079,3.438,1.079,3.438 h0.005c0,0,0-2.279,1.078-3.438c1.133-1.215,3.458-1.214,3.458-1.214v-0.005c0,0-2.326,0.008-3.458-1.215 c-1.078-1.164-1.078-3.438-1.078-3.438h-0.005c0,0,0.005,2.273-1.079,3.438c-1.133,1.217-3.458,1.215-3.458,1.215"/><path class="ao-logo__primary" d="M114.117,12.677v3.558h-5.322V0.006h11.445c4.868,0,7.638,1.667,7.638,6.34V6.337 c0,4.673-2.77,6.339-7.638,6.339H114.117z M114.117,4.724V7.96h6.123c1.428,0,2.314-0.455,2.314-1.623v0.008 c0-1.168-0.887-1.622-2.314-1.622H114.117z"/><path class="ao-logo__primary" d="M135.14,16.234h-5.332V0.006h5.332V16.234z"/><path class="ao-logo__primary" d="M150.912,8.77V0.006h5.324v16.229h-5.324l-7.441-8.763v8.763h-5.324V0.006h5.324 L150.912,8.77z"/><path class="ao-logo__primary" d="M164.573,16.234h-5.332V0.006h5.332V16.234z"/><path class="ao-logo__primary" d="M178.771,0.006c4.869,0,7.639,1.667,7.639,6.34v3.548c0,4.674-2.77,6.341-7.639,6.341 h-4.629c-4.869,0-7.639-1.667-7.639-6.341V6.346c0-4.673,2.77-6.34,7.639-6.34H178.771z M178.771,11.517 c1.43,0,2.316-0.453,2.316-1.623V6.346c0-1.168-0.887-1.622-2.316-1.622h-4.629c-1.428,0-2.316,0.454-2.316,1.622v3.548 c0,1.17,0.889,1.623,2.316,1.623H178.771z"/><path class="ao-logo__primary" d="M201.51,8.77V0.006h5.323v16.229h-5.323l-7.442-8.763v8.763h-5.324V0.006h5.324 L201.51,8.77z"/><path class="ao-logo__secondary ao-logo__tm" d="M211.71,0.071v0.725h-1.063v1.77h-0.818v-1.77h-1.065V0.071H211.71z"/><path class="ao-logo__secondary ao-logo__tm" d="M214.431,0.071h0.818v2.495h-0.818V1.219l-0.656,0.771l-0.656-0.771v1.348H212.3V0.071 h0.818l0.656,0.771L214.431,0.071z"/></g></svg>
+                    <a href="#home" class="lg:pl-4 navbar-brand scrool">
+                        <span class="sr-only">Astropinion</span>
+                        <svg class="ao-logo xs:h-3 sm:h-4 h-full max-h-6" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.25 16.234"><title>Astropinion Logo</title><desc>Image of the Astropinion logo.</desc><g><polygon class="ao-logo__primary" points="8.137,16.235 10.644,10.897 13.154,16.236"/><path class="ao-logo__primary" d="M26.989,4.724h12.803V0.006H26.989c-3.96,0-6.21,1.342-6.21,5.128 c0,3.787,2.25,5.128,6.21,5.128h5.084c0.541,0,0.909,0.172,0.909,0.605c0,0.477-0.368,0.648-0.909,0.648H19.077L13.674,0.006H7.617 L0,16.234h5.583l5.063-10.776l5.063,10.776h5.069h0.513h10.782c3.96,0,6.211-1.342,6.211-5.128c0-3.787-2.251-5.128-6.211-5.128 h-5.084c-0.542,0-0.909-0.173-0.909-0.605C26.08,4.896,26.447,4.724,26.989,4.724z"/><path class="ao-logo__primary" d="M60.616,0.006v4.718h-6.923v11.511h-5.323V4.724h-6.924V0.006H60.616z"/><path class="ao-logo__primary" d="M80.77,6.346c0,2.986-1.147,4.761-3.224,5.626l3.613,4.263H74.82l-3.008-3.548h-4.219 v3.548H62.27V0.006h10.862C78,0.006,80.77,1.672,80.77,6.346z M67.592,4.724v3.246h5.54c1.428,0,2.315-0.455,2.315-1.624 c0-1.168-0.887-1.622-2.315-1.622H67.592z"/><path class="ao-logo__primary ao-logo__crescent" d="M94.801,2.75c6.575,0,11.927,5.22,12.148,11.74 c0.123-0.699,0.19-1.417,0.19-2.152C107.139,5.524,101.616,0,94.801,0S82.462,5.524,82.462,12.337c0,0.735,0.067,1.453,0.191,2.152 C82.874,7.969,88.226,2.75,94.801,2.75z"/><path class="ao-logo__accent ao-logo__star" d="M90.271,11.578c0,0,2.324,0.003,3.458,1.214c1.083,1.158,1.079,3.438,1.079,3.438 h0.005c0,0,0-2.279,1.078-3.438c1.133-1.215,3.458-1.214,3.458-1.214v-0.005c0,0-2.326,0.008-3.458-1.215 c-1.078-1.164-1.078-3.438-1.078-3.438h-0.005c0,0,0.005,2.273-1.079,3.438c-1.133,1.217-3.458,1.215-3.458,1.215"/><path class="ao-logo__primary" d="M114.117,12.677v3.558h-5.322V0.006h11.445c4.868,0,7.638,1.667,7.638,6.34V6.337 c0,4.673-2.77,6.339-7.638,6.339H114.117z M114.117,4.724V7.96h6.123c1.428,0,2.314-0.455,2.314-1.623v0.008 c0-1.168-0.887-1.622-2.314-1.622H114.117z"/><path class="ao-logo__primary" d="M135.14,16.234h-5.332V0.006h5.332V16.234z"/><path class="ao-logo__primary" d="M150.912,8.77V0.006h5.324v16.229h-5.324l-7.441-8.763v8.763h-5.324V0.006h5.324 L150.912,8.77z"/><path class="ao-logo__primary" d="M164.573,16.234h-5.332V0.006h5.332V16.234z"/><path class="ao-logo__primary" d="M178.771,0.006c4.869,0,7.639,1.667,7.639,6.34v3.548c0,4.674-2.77,6.341-7.639,6.341 h-4.629c-4.869,0-7.639-1.667-7.639-6.341V6.346c0-4.673,2.77-6.34,7.639-6.34H178.771z M178.771,11.517 c1.43,0,2.316-0.453,2.316-1.623V6.346c0-1.168-0.887-1.622-2.316-1.622h-4.629c-1.428,0-2.316,0.454-2.316,1.622v3.548 c0,1.17,0.889,1.623,2.316,1.623H178.771z"/><path class="ao-logo__primary" d="M201.51,8.77V0.006h5.323v16.229h-5.323l-7.442-8.763v8.763h-5.324V0.006h5.324 L201.51,8.77z"/>
+                        </g></svg>
+                    </a>
                     <!--end logo -->
 
                     <!--begin navbar-toggler -->
-                    <!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                    </button> -->
+                    </button>
                     <!--end navbar-toggler -->
 
                     <!--begin navbar-collapse -->
-                    <!-- <div class="navbar-collapse collapse" id="navbarCollapse" style=""> -->
+                    <div class="navbar-collapse collapse" id="navbarCollapse">
                         
                         <!--begin navbar-nav -->
-                        <!-- <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav ml-auto">
 
                             <li><a href="#home">Home</a></li>
-
-                            <li><a href="#about">About</a></li>
-
-                            <li><a href="#pricing">Pricing</a></li>
-
-                            <li><a href="#team">Team</a></li>
-
-                            <li><a href="#showcase">Showcase</a></li>
-
+                            <li><a href="#questions">Questions</a></li>
                             <li><a href="#features">Features</a></li>
+                            <li class="discover-link"><a href="#sign-up-section" class="external discover-btn">SIGN UP</a></li>
 
-                            <li><a href="#blog">Blog</a></li>
-
-                            <li><a href="#contact">Contact</a></li>
-
-                            <li class="discover-link"><a href="#" class="external discover-btn">Get Started</a></li>
-
-                        </ul> -->
+                        </ul>
                         <!--end navbar-nav -->
 
-                    <!-- </div> -->
+                    </div>
                     <!--end navbar-collapse -->
 
                 </nav>
                 <!--end navbar -->
 
             </div>
-    		<!--end container -->
+            <!--end container -->
             
         </nav>
-    	<!--end navbar-fixed-top -->
+        <!--end navbar-fixed-top -->
         
     </header>
     <!--end header -->
 
     <!--begin home section -->
-    <section id="home" class="home-section ao-relative ao-flex ao-items-center ao-h-screen ao-min-h-section ao-w-full ao-text-center ao-pt-4">
+    <section id="home" class="home-section relative flex items-center h-screen w-full text-center pt-4">
 
-        <div class="home-section-overlay ao-bg-red-espresso"></div>
+        <div class="home-section-overlay"></div>
 
         <!--begin container -->
         <div class="container">
@@ -106,8 +96,10 @@
             <div class="row">
               
                 <!--begin col-md-12-->
-                <div class="col-md-12 mx-auto padding-top-50 ao-text-base ao-text-s-black">
-                    <h1 class="ao-text-r6xl">Know the "why" behind user behavior.</h1>
+                <div class="col-md-12">
+                    <h1 class="xs:text-4xl lg:text-5xl text-6xl text-white font-bold ao-text-s-black">
+                        Real discovery with real users.
+                    </h1>
                 </div>
                 <!--end col-md-12-->
 
@@ -117,20 +109,22 @@
             <!--begin row -->
             <div class="row">
 
-                <!--begin col-md-8-->
-                <div class="col-md-8 mx-auto ao-text-base ao-text-s-black">
+                <!--begin col-md-12-->
+                <div class="col-md-12">
 
-                    <p class="ao-text-r2xl">
-                        Astropinion makes it simple to know exactly what your users
-                        think about your product and why. Can you afford not to know?
-                    </p>
+                    <div class="mt-6 mx-auto max-w-4xl">
+                        <p class="xs:text-lg lg:text-xl text-2xl leading-normal text-white ao-text-s-black">
+                            Astropinion is a simple panel management tool that automatically
+                            identifies your users who want to participate in product research.
+                        </p>
 
-                    <a class="btn-white-border scrool ao-text-r2xl ao-tracking-wider" href="#sign-up-section">
-                        START NOW
-                    </a>
+                        <a class="btn-blue scrool mt-10 xs:text-lg lg:text-xl text-2xl" href="#sign-up-section">
+                            SIGN UP
+                        </a>
+                    </div>
 
                 </div>
-                <!--end col-md-8-->
+                <!--end col-md-12-->
            
             </div>
             <!--end row -->
@@ -140,6 +134,179 @@
 
     </section>
     <!--end home section -->
+
+    <!--begin faq section -->
+    <section class="section-grey pt-20 border-b-2" id="questions">
+
+        <!--begin container-->
+        <div class="container">
+
+            <!--begin row-->
+            <div class="row">
+
+                <!--begin col-md-12-->
+                <div class="col-md-12 text-center mb-12">
+
+                    <h2 class="section-title text-4xl font-bold">
+                        Launch Training
+                    </h2>
+
+                    <p class="section-subtitle">
+                        Frequently asked questions to prepare for launch.
+                    </p>
+        
+                </div>
+                <!--end col-md-12 --> 
+
+            </div>
+            <!--end row-->
+
+            <!--begin row-->
+            <div class="row">
+
+                <!--begin col-md-5-->
+                <div class="col-md-5">
+
+                    <!--begin q&a image -->
+                    <div class="moon w-full h-full">
+                        <img
+                            src="./images/astronaut.png"
+                            class="astronaut inline-block wow slideInLeft"
+                            alt="Illustration of an astronaut"
+                            data-wow-duration="2.0s"
+                            >
+                    </div>
+                    <!--end q&a image -->
+
+                </div>
+                <!--end col-md-5-->
+
+                <!--begin col-md-6-->
+                <div class="col-md-7">
+
+                    <!--begin accordion -->
+                    <div class="accordion mt-6" id="accordionFAQ">
+
+                        <!--begin card -->
+                        <div class="card bg-gray-200 py-2 px-3 rounded-lg mb-3">
+
+                            <div class="flex flex-no-wrap flex-row items-center">
+                                <div class="dropcaps-circle mr-3">
+                                    <i class="fas fa-user-astronaut"></i>
+                                </div>
+
+                                <div class="card-header flex-grow" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed xs:text-xl sm:text-2xl text-3xl text-left text-gray-900 hover:text-yellow-olive" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Who is Astropinion for?
+                                        </button>
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFAQ">
+                                <div class="card-body mt-1">
+                                    <p class="mb-3 text-blue-dove">
+                                        Product teams that want authentic user insights. In other
+                                        words, hardworking product managers, researchers,
+                                        analysts, designers, and marketers who want to launch
+                                        stellar user research.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end card -->
+
+                        <!--begin card -->
+                        <div class="card bg-gray-200 py-2 px-3 rounded-lg mb-3">
+
+                            <div class="flex flex-no-wrap flex-row items-center">
+                                <div class="dropcaps-circle mr-3">
+                                    <i class="fas fa-satellite-dish"></i>
+                                </div>
+
+                                <div class="card-header flex-grow" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed xs:text-xl sm:text-2xl text-3xl text-left text-gray-900 hover:text-yellow-olive" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            What is panel management?
+                                        </button>
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
+                                <div class="card-body mt-1">
+                                    <p class="mb-3 text-blue-dove">
+                                        We all know it can be a struggle to get users to participate
+                                        in interviews, surveys, and other discovery tasks.
+                                    </p>
+                                    <p class="mb-3 text-blue-dove">
+                                        When you maintain your own active research population,
+                                        recruiting users to validate concepts or test ideas becomes
+                                        far easier and more authentic. Managing this group of
+                                        research participants is panel management.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end card -->
+
+                        <!--begin card -->
+                        <div class="card bg-gray-200 py-2 px-3 rounded-lg mb-3">
+
+                            <div class="flex flex-no-wrap flex-row items-center">
+                                <div class="dropcaps-circle mr-3">
+                                    <i class="fas fa-space-shuttle"></i>
+                                </div>
+
+                                <div class="card-header flex-grow" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed xs:text-xl sm:text-2xl text-3xl text-left text-gray-900 hover:text-yellow-olive" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Why do I need this tool?
+                                        </button>
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ">
+                                <div class="card-body mt-1">
+                                    <p class="mb-3 text-blue-dove">
+                                        While you can buy superficial research participants to pad
+                                        discovery interviews and answer surveys, those users are
+                                        not your real users. That leaves teams wondering if real
+                                        users would have given the same responses. 
+                                    </p>
+                                    <p class="mb-3 text-blue-dove">
+                                        Real users are also more motivated to give useful
+                                        feedback. After all, our users are our partners in building
+                                        brilliant products.
+                                    </p>
+                                    <p class="mb-3 text-blue-dove">
+                                        Astropinion is your mission control center for stellar
+                                        user research. Use it to gain authentic responses to your
+                                        questions with genuine insight into what your real users
+                                        actually think.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--end card -->
+
+                    </div>
+                    <!--end accordion -->
+
+                </div>
+                <!--end col-md-6-->
+
+            </div>
+            <!--end row-->
+    
+        </div>
+        <!--end container-->
+    
+    </section>
+    <!--end faq section -->
 
     <!--begin services section -->
     <section class="section-white section-bottom-border" id="features">
@@ -151,12 +318,10 @@
             <div class="row">
 
                 <!--begin col-md-12-->
-                <div class="col-md-12 text-center padding-bottom-10">
-
-                    <h2 class="section-title">Amazing Features</h2>
-
-                    <p class="section-subtitle">There are many variations of passages of Lorem Ipsum available, but the majority<br>have suffered alteration, by injected humour, or new randomised words.</p>
-
+                <div class="col-md-12 text-center mb-8">
+                    <h2 class="section-title text-4xl font-bold">
+                        Your mission control center for stellar user research
+                    </h2>
                 </div>
                 <!--end col-md-12 -->
 
@@ -169,13 +334,12 @@
                 <!--begin col-md-4-->
                 <div class="col-md-4">
 
-                    <div class="feature-box wow fadeIn" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeIn;">
+                    <div class="feature-box">
 
                         <i class="fas fa-tachometer-alt"></i>
 
-                        <h4>Powerful Dashboard</h4>
-
-                        <p>Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle consequat nihis etim.</p>
+                        <h4>Automatic Panel Management</h4>
+                        <p>Focus on your discovery, not on managing users and settings.</p>
 
                     </div>
                 </div>
@@ -184,13 +348,12 @@
                 <!--begin col-md-4-->
                 <div class="col-md-4">
 
-                    <div class="feature-box wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                    <div class="feature-box">
 
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-plug"></i>
 
-                        <h4>User Friendly</h4>
-
-                        <p>Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle consequat nihis etim.</p>
+                        <h4>Easy Integration</h4>
+                        <p>Integrate with your signup flow and your favorite research tools.</p>
 
                     </div>
                 </div>
@@ -199,13 +362,12 @@
                 <!--begin col-md 4-->
                 <div class="col-md-4">
 
-                    <div class="feature-box wow fadeIn" data-wow-delay="0.75s" style="visibility: visible; animation-delay: 0.75s; animation-name: fadeIn;">
+                    <div class="feature-box">
 
                         <i class="fas fa-bell"></i>
 
-                        <h4>Smart Notifications</h4>
-
-                        <p>Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle consequat nihis etim.</p>
+                        <h4>Thoughtful Contact Permissions</h4>
+                        <p>Allow your users to decide how and how often you contact them.</p>
 
                     </div>
                 </div>
@@ -220,28 +382,26 @@
                 <!--begin col-md-4-->
                 <div class="col-md-4">
 
-                    <div class="feature-box wow fadeIn" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeIn;">
+                    <div class="feature-box">
+
+                        <i class="fas fa-address-card"></i>
+
+                        <h4>Detailed Screening</h4>
+                        <p>Screen your research participants using rich user profiles.</p>
+
+                    </div>
+                </div>
+                <!--end col-md-4 -->
+
+                <!--begin col-md-4-->
+                <div class="col-md-4">
+
+                    <div class="feature-box">
 
                         <i class="fas fa-hand-holding-usd"></i>
 
-                        <h4>Cost Control</h4>
-
-                        <p>Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle consequat nihis etim.</p>
-
-                    </div>
-                </div>
-                <!--end col-md-4 -->
-
-                <!--begin col-md-4-->
-                <div class="col-md-4">
-
-                    <div class="feature-box wow fadeIn" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn;">
-
-                        <i class="fas fa-rocket"></i>
-
-                        <h4>Unique Features</h4>
-
-                        <p>Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle consequat nihis etim.</p>
+                        <h4>Flexible Payouts</h4>
+                        <p>Decide if and how you want to pay your users for their feedback.</p>
 
                     </div>
                 </div>
@@ -250,13 +410,12 @@
                 <!--begin col-md-4-->
                 <div class="col-md-4">
 
-                    <div class="feature-box wow fadeIn" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 1.5s; animation-name: fadeIn;">
+                    <div class="feature-box">
 
-                        <i class="fab fa-rocketchat"></i>
+                        <i class="fas fa-meteor"></i>
 
-                        <h4>Support 24/7</h4>
-
-                        <p>Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle consequat nihis etim.</p>
+                        <h4>Own Your Data</h4>
+                        <p>Export, import, delete, or modify your user data at any time.</p>
 
                     </div>
                 </div>
@@ -271,44 +430,8 @@
     </section>
     <!--end services section -->
 
-    <!--begin section-blue -->
-    <section class="section-blue">
-
-        <!--begin container -->
-        <div class="container">
-
-            <!--begin row -->
-            <div class="row">
-
-                <!--begin col-md-6-->
-                <div class="col-md-6 wow slideInRight" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: slideInRight;">
-                    <img src="http://placehold.it/555x370" class="width-100 box-shadow" alt="pic">
-                </div>
-                <!--end col-md-6-->
-
-                <!--begin col-md-6-->
-                <div class="col-md-6 padding-top-30 padding-left-20">
-
-                    <h2 class="white-text">Real-time reporting on your most important metrics.</h2>
-
-                    <p class="white-text">Work is completely different today. Teams are more agile, more collaborative and drive innovation faster than ever — and the most successful companies have a digital workplace to match.</p>
-
-                    <p class="white-text">Essentials is designed with your customers in mind, so you can track and analyze all your data in one central location. Essentials offer a better experience for your customers.</p>
-
-                </div>
-                <!--end col-md-6-->
-           
-            </div>
-            <!--end row -->
-            
-        </div>
-        <!--end container -->
-
-    </section>
-    <!--end section-blue -->
-
-    <!--begin section-grey -->
-    <section class="section-white section-top-border" id="about">
+    <!--begin sign-up section -->
+    <section class="section-blue bg-blue-rhino" id="sign-up-section">
 
         <!--begin container -->
         <div class="container">
@@ -319,117 +442,83 @@
                 <!--begin col-md-12 -->
                 <div class="col-md-12 text-center">
 
-                    <h2 class="section-title">Integrated solutions designed for small business</h2>
+                    <p class="mb-4 sm:text-3xl text-4xl leading-tight text-white font-dosis font-semibold wow fadeIn" data-wow-duration="2s">
+                        You have stellar research ideas.
+                    </p>
+                    <p class="mb-4 sm:text-3xl text-4xl leading-tight text-white font-dosis font-semibold wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
+                        We're hard at work building the launch pad.
+                    </p>
+                    <p class="mt-4 mb-4 py-2 sm:text-3xl text-4xl pointer-events-none">
+                        <i class="fas fa-angle-left text-blue-shuttle text-xl wow fadeInLeftBig" data-wow-duration="2s" data-wow-delay="1.5s"></i>
+                        <i class="fas fa-angle-double-left text-blue-shuttle text-xl wow fadeInLeftBig" data-wow-duration="2s" data-wow-delay="1.25s"></i>
+                        <i class="fas fa-space-shuttle text-red-brick text-3xl -ao-rotate-90 wow fadeIn" data-wow-duration="2s" data-wow-delay="1.6s"></i>
+                        <i class="fas fa-angle-double-right text-blue-shuttle text-xl wow fadeInRightBig" data-wow-duration="2s" data-wow-delay="1.25s"></i>
+                        <i class="fas fa-angle-right text-blue-shuttle text-xl wow fadeInRightBig" data-wow-duration="2s" data-wow-delay="1.5s"></i>
+                    </p>
+                    <p class="mb-4 pb-1 sm:text-lg text-xl leading-tight text-white font-dosis wow fadeIn" data-wow-duration="2s" data-wow-delay="3.40s">
+                        Enter your email address to be the first to know when your shuttle
+                        is ready for departure.
+                    </p>
 
-                    <p class="section-subtitle">Communicate with flexible tools that go where your team goes.</p>
-                    
                 </div>
                 <!--end col-md-12 -->
 
-                <!--begin col-md-4 -->
-                <div class="col-md-4">
-
-                    <div class="main-services">
-
-                        <img src="images/main-service1.png" class="width-100" alt="pic">
-
-                        <h3>Designers</h3>
-
-                        <p>Curabitur quam etsum lacus netsum nulat iaculis ets vitae etsum nisle varius sed aliquam ets vitae netsum.</p>
-
-                        <a href="#about" class="btn-blue-line small scrool">Essentials for Designers</a>
-                        
-                    </div>
-
-                </div>
-                <!--end col-md-4 -->
-
-                <!--begin col-md-4 -->
-                <div class="col-md-4">
-
-                    <div class="main-services">
-
-                        <img src="images/main-service1.png" class="width-100" alt="pic">
-
-                        <h3>Marketers</h3>
-
-                        <p>Curabitur quam etsum lacus netsum nulat iaculis ets vitae etsum nisle varius sed aliquam ets vitae netsum.</p>
-
-                        <a href="#about" class="btn-blue-line small scrool">Essentials for Marketers</a>
-                        
-                    </div>
-
-                </div>
-                <!--end col-md-4 -->
-
-                <!--begin col-md-4 -->
-                <div class="col-md-4">
-
-                    <div class="main-services">
-
-                        <img src="images/main-service1.png" class="width-100" alt="pic">
-
-                        <h3>Agencies</h3>
-
-                        <p>Curabitur quam etsum lacus netsum nulat iaculis ets vitae etsum nisle varius sed aliquam ets vitae netsum.</p>
-
-                        <a href="#about" class="btn-blue-line small scrool">Essentials for Agencies</a>
-                        
-                    </div>
-
-                </div>
-                <!--end col-md-4 -->
-           
+            <!-- end row -->
             </div>
-            <!--end row -->
-            
-        </div>
-        <!--end container -->
-
-    </section>
-    <!--end section-grey -->
-
-    <!--begin sign-up section -->
-    <section id="sign-up-section" class="section-blue small-paddings">
-
-        <!--begin container -->
-        <div class="container">
 
             <!--begin row -->
             <div class="row">
 
-                <!--begin col-md-12 -->
-                <div class="col-md-12 text-center padding-top-50 padding-bottom-20">
-
-                    <h3 class="white-text">Seen enough? We are currently in the closed beta.<br>
-                    Please enter your email to join the waiting list.</h3>
-
-                </div>
-                <!--end col-md-12 -->
-
                 <!--begin col-md-12-->
-                <div class="col-md-12 padding-bottom-40">
+                <div class="col-md-12 mt-2">
 
                     <!--begin newsletter_form_wrapper -->
-                    <div class="newsletter_form_wrapper wow bounceIn" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: bounceIn;">
+                    <div class="newsletter_form_wrapper">
                         
                         <!--begin newsletter_form_box -->
                         <div class="newsletter_form_box">
                             
                             <!--begin success_box -->
-                            <p class="newsletter_success_box" style="display:none;">We received your message and you'll hear from us soon. Thank You!</p>
+                            <p class="newsletter_success_box sm:text-lg text-xl leading-tight text-white font-dosis" style="display:none;">
+                                We hear you loud and clear. Thank you for subscribing!
+                            </p>
                             <!--end success_box -->
                             
                             <!--begin newsletter-form -->
-                            <form id="newsletter-form" class="newsletter-form" action="php/newsletter.php" method="post">
+                            <!--begin Mailchimp signup form -->
+                            <form
+                                class="newsletter-form sm:text-lg text-xl"
+                                id="newsletter-form"
+                                action="https://astropinion.us4.list-manage.com/subscribe/post?u=fac048f4f0ced20ab28d25d69&amp;id=cdd3cf8655"
+                                method="post"
+                                target="_blank"
+                                novalidate
+                                >
+                                <input
+                                    id="mce-EMAIL"
+                                    type="email"
+                                    value=""
+                                    name="EMAIL"
+                                    placeholder="Enter your email address"
+                                    required
+                                    >
 
-                                <input id="email_newsletter" type="email" name="nf_email" placeholder="Enter Your Email Address">  
+                                <!-- Real people should not fill this in and expect good things - do not remove this or risk form bot signups. -->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_fac048f4f0ced20ab28d25d69_cdd3cf8655" tabindex="-1" value="">
+                                </div>
 
-                                <input type="submit" value="GET STARTED!" id="submit-button-newsletter">
-
+                                <input
+                                    class="text-yellow-woodland"
+                                    id="submit-button-newsletter"
+                                    value="SIGN UP"
+                                    type="submit"
+                                    name="subscribe"
+                                    >
                             </form>
+                            <!--End mc_embed_signup-->
                             <!--end newsletter-form -->
-                        
+
                         </div>
                         <!--end newsletter_form_box -->
             
@@ -448,8 +537,38 @@
     </section>
     <!--end sign-up section -->
 
+    <!--begin branding section -->
+    <section class="py-3 bg-white" id="branding">
+
+        <!--begin container-->
+        <div class="container">
+
+            <!--begin row-->
+            <div class="row">
+
+                <!--begin col-md-12-->
+                <div class="col-md-12 text-center">
+
+                    <h2 class="text-xl text-blue-rhino">
+                        Real tools for real products.
+                        <i class="fas fa-space-shuttle text-red-burnt-umber ao-shuttle-upright ao-rotate-90 text-base"></i>
+                        <span class="text-yellow-woodland">Scientists optional.</span>
+                    </h2>
+
+                </div>
+                <!--end col-md-12 -->
+
+            </div>
+            <!--end row-->
+
+        <!--end container-->
+        </div>
+
+    </section>
+    <!--end branding section -->
+
     <!--begin section-black -->
-    <section id="copyright" class="ao-bg-black section-top-border">
+    <section class="bg-black" id="copyright">
 
         <!--begin container -->
         <div class="container">
@@ -459,9 +578,11 @@
 
                 <!--begin col-md-12 -->
                 <div class="col-md-12 text-center">
-                    <p class="ao-text-xs ao-m-0 ao-p-0">
+
+                    <p class="m-0 py-2 leading-tight text-xs text-blue-shuttle">
                         Copyright © 2019 Astropinion. All rights reserved.
                     </p>
+
                 </div>
                 <!--end col-md-12 -->
 
@@ -474,16 +595,9 @@
     </section>
     <!--end section-black -->
 
-<!-- Load JS here for greater good =============================-->
-<!-- <script src="js/jquery-3.3.1.min.js"></script> -->
-<!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.scrollTo-min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/custom.js"></script> -->
+    <!-- Load JS here =============================-->
+    <script src="./js/libraries.js"></script>
+    <script src="./js/template.js"></script>
 
 </body>
 </html>

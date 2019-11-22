@@ -1,0 +1,312 @@
+/**
+ * These colors are split from the default template styles to make them easier to manage.
+ */
+
+/* ==========================================================================
+   00. VARIABLES
+   ========================================================================== */
+
+   :root {    
+    /* All Themes */
+    --red-espresso: #5e171e;
+    
+    /* Dark Theme (on black) */
+    --red-brick: #b32130;
+    --blue-shuttle: #677785;
+    --blue-electric: #0c86f7;
+    --blue-congress: #004280;
+    --blue-shark: #24292e;
+
+    /* Light Theme (on sand) */
+    --red-burnt-umber: #942530;
+    --blue-dove: #616f7d;
+    --blue-mariner: #358cde;
+    --blue-rhino: #2a4865;
+    --yellow-sand: #f1f2da;
+    --yellow-eagle: #c1c2a7;
+    --yellow-olive: #6d7146;
+    --yellow-woodland: #4d4f2b;
+}
+
+
+/* ========================================================== */
+/*  01. GENERAL LAYOUT                                        */
+/* ========================================================== */
+
+ul, ol { 
+    color:#858585;
+}
+
+p {
+    /* color: #7c8595; */
+    color: var(--blue-dove);
+}
+
+a:hover{
+    color: var(--blue-electric);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #071e55;
+}
+
+.section-top-border {
+    border-top-color: #efefef;
+}
+
+.section-bottom-border {
+    border-bottom-color: #efefef;
+}
+
+.section-white {
+    background-color: #ffffff;
+}
+
+.section-white .section-title {
+    @apply text-gray-900;
+}
+
+.section-grey .section-title {
+    @apply text-gray-900;
+}
+
+.section-white .section-subtitle,
+.section-grey .section-subtitle {
+    color: var(--blue-dove);
+}
+
+.section-grey {
+    background-color: #fafbfc;
+}
+
+.section-blue {
+    background-color: var(--blue-mariner);
+}
+
+.section-yellow {
+    background-color: var(--yellow-sand);
+}
+
+
+/* ========================================================== */
+/*  02. MENU NAV            i                                 */
+/* ========================================================== */
+
+.navbar-fixed-top .navbar-nav > li > a {
+    color: #000000;
+}
+
+.navbar-fixed-top .navbar-nav > li > a:hover,
+.navbar-fixed-top .navbar-nav .current a {
+    color: #000000 !important;
+}
+
+.navbar-toggler.theme-dark {
+    border-color: var(--blue-electric);
+}
+
+.navbar-toggler-icon.theme-dark i {
+    color: var(--blue-electric);
+}
+
+.navbar-fixed-top.theme-dark {
+    background-color: #000000;
+    border-bottom-color: var(--blue-shark);
+}
+
+.navbar-fixed-top.theme-light {
+    background-color: var(--yellow-sand);
+    border-bottom-color: var(--yellow-eagle);
+}
+
+.navbar-fixed-top.theme-dark .navbar-nav > li > a {
+    color: var(--blue-shuttle);
+}
+
+.navbar-fixed-top.theme-dark .navbar-nav > li > a:hover,
+.navbar-fixed-top.theme-dark .navbar-nav .current a {
+    color: var(--blue-electric) !important;
+}
+
+.navbar-fixed-top.theme-light .navbar-nav > li > a {
+    color: var(--yellow-olive);
+}
+
+.navbar-fixed-top.theme-light .navbar-nav > li > a:hover,
+.navbar-fixed-top.theme-light .navbar-nav .current a {
+    color: var(--red-brick) !important;
+}
+
+.navbar-fixed-top.theme-dark .navbar-nav > li > a.discover-btn {
+    color: #ffffff !important;
+    border-color: var(--blue-electric);
+    background-color: transparent;
+}
+
+.navbar-fixed-top.theme-dark .navbar-nav > li > a.discover-btn:hover {
+    background-color: var(--blue-electric);
+}
+
+.navbar-fixed-top.theme-light .navbar-nav > li > a.discover-btn {
+    color: #ffffff !important;
+    border-color: var(--red-brick);
+    background-color: var(--red-brick);
+}
+
+.navbar-fixed-top.theme-light .navbar-nav > li > a.discover-btn:hover {
+    border-color: var(--red-espresso);
+    background-color: var(--red-espresso);
+}
+
+
+/* ========================================================== */
+/*  06. FEATURES                                              */
+/* ========================================================== */
+
+.main-services h3 {
+    color: #292929;
+}
+
+blockquote {
+    color: #4285f4;
+    border-left-color: #4285f4;
+}
+
+.feature-box i {
+    color: var(--blue-mariner);
+}
+
+.feature-box p {
+    color: var(--blue-dove);
+}
+
+.feature-box h4 {
+    color: var(--blue-rhino);
+}
+
+
+/* ========================================================== */
+/*  10. OTHER ELEMENTS      i                                 */
+/* ========================================================== */
+
+/* -----  a) Newsletter ----- */
+
+#newsletter-form #mce-EMAIL {
+    color:var(--blue-shark);
+    background-color: var(--yellow-sand);
+}
+
+#newsletter-form #submit-button-newsletter {
+    color: var(--blue-shark);
+    background-color: var(--yellow-eagle);
+}
+
+#newsletter-form #submit-button-newsletter:hover {
+    color: var(--yellow-sand);
+    background-color: var(--yellow-olive);
+}
+
+/* WebKit browsers */
+input#mce-EMAIL::-webkit-input-placeholder {
+    color: var(--yellow-woodland) !important;
+}
+
+/* Mozilla Firefox 4 to 18 */
+input#mce-EMAIL:-moz-placeholder {
+    color: var(--yellow-woodland) !important;
+}
+
+/* Mozilla Firefox 19+ */
+input#mce-EMAIL::-moz-placeholder {
+    color: var(--yellow-woodland) !important;
+}
+
+/* Internet Explorer 10+ */
+input#mce-EMAIL:-ms-input-placeholder {
+    color: var(--yellow-woodland) !important;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--yellow-woodland) !important;
+}
+
+.newsletter_success_box {
+    color:#ffffff;
+}
+
+
+/* ----- b) Buttons ----- */
+
+.btn-white {
+    color: #0883fb;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0px 8px 40px 0 rgba(0, 0, 0, 0.37);
+}
+
+.btn-white:hover {
+    color: #0470ea !important;
+    background-color:#f9f9f9;
+    box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn-white-border {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-white-border:hover {
+    color: #0883fb;
+    background-color: #000;
+    border-color: #374046;
+    box-shadow: 0px 8px 40px 0 rgba(0, 0, 0, 0.37);
+}
+
+.btn-blue {
+    color: #ffffff;
+    background-color: var(--red-brick);
+    box-shadow: 0px 8px 40px 0 rgba(0, 0, 0, 0.37);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+}
+
+.btn-blue:hover {
+    color: #ffffff !important;
+    background-color: var(--red-espresso);
+    box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn-blue-line {
+    background-color: transparent;
+    color: var(--blue-electric);
+    border-color: var(--blue-electric);
+}
+
+.btn-blue-line:hover{
+    color: #ffffff !important;
+    background-color: var(--blue-electric);
+}
+
+a.btn-blue:visited, a.btn-blue:focus{
+    color: #ffffff !important;
+}
+
+
+/* ----- e) Accordion Tabs ----- */
+
+.card-header {
+    border-color: transparent;
+}
+
+.card-body {
+    /* border-color: var(--red-brick); */
+    border-color: transparent;
+}
+
+
+/* ----- h) Dropcaps Features ----- */
+
+.dropcaps-circle {
+    color: var(--yellow-sand);
+    background-color: var(--yellow-olive);
+    border-color: transparent;
+}
