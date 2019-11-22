@@ -109,23 +109,23 @@ $(window).on('load', function(){
     /*   Newsletter                                               */
     /* ========================================================== */
     
-    $('.newsletter-form').each( function(){
-        var form = $(this);
-        //form.validate();
-        form.submit(function(e) {
-            if (!e.isDefaultPrevented()) {
-                jQuery.post(this.action, {
-                    'email': $('input[name="EMAIL"]').val(),
-                }, function(data){
-                    console.log(data);
-                    form.fadeOut('fast', function() {
-                        $(this).siblings('p.newsletter_success_box').show();
-                    });
-                });
-                e.preventDefault();
-            }
-        });
-    });		
+    // $('.newsletter-form').each( function(){
+    //     var form = $(this);
+    //     //form.validate();
+    //     form.submit(function(e) {
+    //         if (!e.isDefaultPrevented()) {
+    //             jQuery.post(this.action, {
+    //                 'email': $('input[name="EMAIL"]').val(),
+    //             }, function(data){
+    //                 console.log(data);
+    //                 form.fadeOut('fast', function() {
+    //                     $(this).siblings('p.newsletter_success_box').show();
+    //                 });
+    //             });
+    //             e.preventDefault();
+    //         }
+    //     });
+    // });		
     
 
     /* ========================================================== */
