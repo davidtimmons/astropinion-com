@@ -425,7 +425,7 @@ iframe {
 
 .navbar {
     width: 100%;
-    z-index: 9999;
+    z-index: 500;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 0;
@@ -447,15 +447,15 @@ iframe {
 }
 
 .navbar-fixed-top {
-    position: absolute;
+    /* position: absolute; */
     border-bottom-style: solid;
     border-bottom-width: 8px;
-    transition: background-color 0.25s ease 0s;
+    /* transition: background-color 0.25s ease 0s; */
 }
 
 .navbar-fixed-top.opaque {
     position: fixed !important;
-    transition: all 0.25s ease-in-out 0s;
+    /* transition: all 0.25s ease-in-out 0s; */
 }
 
 .navbar-fixed-top .navbar-nav > li > a,
@@ -1605,11 +1605,6 @@ ul.partners-mentions li img:hover {
 }
 
 @media (max-width: 375px) {
-
-    .navbar-toggle {
-        margin-bottom: 0;
-        border: 1px solid #9f9f9f!important;
-    }
 
     /**
      * 1. Prevents flex from squeezing it into a compressed shape.

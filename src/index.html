@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
 
-    <title>A simple panel management tool for user research | Astropinion</title>
+    <title>Simple panel management for user research | Astropinion</title>
 
     <!-- Bootstrap Styles -->
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -30,13 +30,13 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151926575-2"></script>
 </head>
 
-<body>
+<body class="theme-dark">
 
     <!--begin header -->
-    <header class="header">
+    <header class="header relative ao-min-h-header">
 
         <!--begin navbar-fixed-top -->
-        <nav class="navbar navbar-default navbar-fixed-top theme-dark opaque">
+        <nav class="navbar navbar-default navbar-fixed-top opaque">
             
             <!--begin container -->
             <div class="container">
@@ -51,8 +51,7 @@
                         data-tag="onClick|navigate|navbar|logo"
                         >
                         <span class="sr-only">Astropinion</span>
-                        <svg class="ao-logo xs:h-3 sm:h-4 h-full max-h-6" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.25 16.234"><title>Astropinion Logo</title><desc>Image of the Astropinion logo.</desc><g><polygon class="ao-logo__primary" points="8.137,16.235 10.644,10.897 13.154,16.236"/><path class="ao-logo__primary" d="M26.989,4.724h12.803V0.006H26.989c-3.96,0-6.21,1.342-6.21,5.128 c0,3.787,2.25,5.128,6.21,5.128h5.084c0.541,0,0.909,0.172,0.909,0.605c0,0.477-0.368,0.648-0.909,0.648H19.077L13.674,0.006H7.617 L0,16.234h5.583l5.063-10.776l5.063,10.776h5.069h0.513h10.782c3.96,0,6.211-1.342,6.211-5.128c0-3.787-2.251-5.128-6.211-5.128 h-5.084c-0.542,0-0.909-0.173-0.909-0.605C26.08,4.896,26.447,4.724,26.989,4.724z"/><path class="ao-logo__primary" d="M60.616,0.006v4.718h-6.923v11.511h-5.323V4.724h-6.924V0.006H60.616z"/><path class="ao-logo__primary" d="M80.77,6.346c0,2.986-1.147,4.761-3.224,5.626l3.613,4.263H74.82l-3.008-3.548h-4.219 v3.548H62.27V0.006h10.862C78,0.006,80.77,1.672,80.77,6.346z M67.592,4.724v3.246h5.54c1.428,0,2.315-0.455,2.315-1.624 c0-1.168-0.887-1.622-2.315-1.622H67.592z"/><path class="ao-logo__primary ao-logo__crescent" d="M94.801,2.75c6.575,0,11.927,5.22,12.148,11.74 c0.123-0.699,0.19-1.417,0.19-2.152C107.139,5.524,101.616,0,94.801,0S82.462,5.524,82.462,12.337c0,0.735,0.067,1.453,0.191,2.152 C82.874,7.969,88.226,2.75,94.801,2.75z"/><path class="ao-logo__accent ao-logo__star" d="M90.271,11.578c0,0,2.324,0.003,3.458,1.214c1.083,1.158,1.079,3.438,1.079,3.438 h0.005c0,0,0-2.279,1.078-3.438c1.133-1.215,3.458-1.214,3.458-1.214v-0.005c0,0-2.326,0.008-3.458-1.215 c-1.078-1.164-1.078-3.438-1.078-3.438h-0.005c0,0,0.005,2.273-1.079,3.438c-1.133,1.217-3.458,1.215-3.458,1.215"/><path class="ao-logo__primary" d="M114.117,12.677v3.558h-5.322V0.006h11.445c4.868,0,7.638,1.667,7.638,6.34V6.337 c0,4.673-2.77,6.339-7.638,6.339H114.117z M114.117,4.724V7.96h6.123c1.428,0,2.314-0.455,2.314-1.623v0.008 c0-1.168-0.887-1.622-2.314-1.622H114.117z"/><path class="ao-logo__primary" d="M135.14,16.234h-5.332V0.006h5.332V16.234z"/><path class="ao-logo__primary" d="M150.912,8.77V0.006h5.324v16.229h-5.324l-7.441-8.763v8.763h-5.324V0.006h5.324 L150.912,8.77z"/><path class="ao-logo__primary" d="M164.573,16.234h-5.332V0.006h5.332V16.234z"/><path class="ao-logo__primary" d="M178.771,0.006c4.869,0,7.639,1.667,7.639,6.34v3.548c0,4.674-2.77,6.341-7.639,6.341 h-4.629c-4.869,0-7.639-1.667-7.639-6.341V6.346c0-4.673,2.77-6.34,7.639-6.34H178.771z M178.771,11.517 c1.43,0,2.316-0.453,2.316-1.623V6.346c0-1.168-0.887-1.622-2.316-1.622h-4.629c-1.428,0-2.316,0.454-2.316,1.622v3.548 c0,1.17,0.889,1.623,2.316,1.623H178.771z"/><path class="ao-logo__primary" d="M201.51,8.77V0.006h5.323v16.229h-5.323l-7.442-8.763v8.763h-5.324V0.006h5.324 L201.51,8.77z"/>
-                        </g></svg>
+                        <svg class="ao-logo ao-logo--size" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.25 16.234"><title>Astropinion Logo</title><desc>Image of the Astropinion logo.</desc><g><polygon class="ao-logo__primary" points="8.137,16.235 10.644,10.897 13.154,16.236"/><path class="ao-logo__primary" d="M26.989,4.724h12.803V0.006H26.989c-3.96,0-6.21,1.342-6.21,5.128 c0,3.787,2.25,5.128,6.21,5.128h5.084c0.541,0,0.909,0.172,0.909,0.605c0,0.477-0.368,0.648-0.909,0.648H19.077L13.674,0.006H7.617 L0,16.234h5.583l5.063-10.776l5.063,10.776h5.069h0.513h10.782c3.96,0,6.211-1.342,6.211-5.128c0-3.787-2.251-5.128-6.211-5.128 h-5.084c-0.542,0-0.909-0.173-0.909-0.605C26.08,4.896,26.447,4.724,26.989,4.724z"/><path class="ao-logo__primary" d="M60.616,0.006v4.718h-6.923v11.511h-5.323V4.724h-6.924V0.006H60.616z"/><path class="ao-logo__primary" d="M80.77,6.346c0,2.986-1.147,4.761-3.224,5.626l3.613,4.263H74.82l-3.008-3.548h-4.219 v3.548H62.27V0.006h10.862C78,0.006,80.77,1.672,80.77,6.346z M67.592,4.724v3.246h5.54c1.428,0,2.315-0.455,2.315-1.624 c0-1.168-0.887-1.622-2.315-1.622H67.592z"/><path class="ao-logo__primary ao-logo__crescent" d="M94.801,2.75c6.575,0,11.927,5.22,12.148,11.74 c0.123-0.699,0.19-1.417,0.19-2.152C107.139,5.524,101.616,0,94.801,0S82.462,5.524,82.462,12.337c0,0.735,0.067,1.453,0.191,2.152 C82.874,7.969,88.226,2.75,94.801,2.75z"/><path class="ao-logo__accent ao-logo__star" d="M90.271,11.578c0,0,2.324,0.003,3.458,1.214c1.083,1.158,1.079,3.438,1.079,3.438 h0.005c0,0,0-2.279,1.078-3.438c1.133-1.215,3.458-1.214,3.458-1.214v-0.005c0,0-2.326,0.008-3.458-1.215 c-1.078-1.164-1.078-3.438-1.078-3.438h-0.005c0,0,0.005,2.273-1.079,3.438c-1.133,1.217-3.458,1.215-3.458,1.215"/><path class="ao-logo__primary" d="M114.117,12.677v3.558h-5.322V0.006h11.445c4.868,0,7.638,1.667,7.638,6.34V6.337 c0,4.673-2.77,6.339-7.638,6.339H114.117z M114.117,4.724V7.96h6.123c1.428,0,2.314-0.455,2.314-1.623v0.008 c0-1.168-0.887-1.622-2.314-1.622H114.117z"/><path class="ao-logo__primary" d="M135.14,16.234h-5.332V0.006h5.332V16.234z"/><path class="ao-logo__primary" d="M150.912,8.77V0.006h5.324v16.229h-5.324l-7.441-8.763v8.763h-5.324V0.006h5.324 L150.912,8.77z"/><path class="ao-logo__primary" d="M164.573,16.234h-5.332V0.006h5.332V16.234z"/><path class="ao-logo__primary" d="M178.771,0.006c4.869,0,7.639,1.667,7.639,6.34v3.548c0,4.674-2.77,6.341-7.639,6.341 h-4.629c-4.869,0-7.639-1.667-7.639-6.341V6.346c0-4.673,2.77-6.34,7.639-6.34H178.771z M178.771,11.517 c1.43,0,2.316-0.453,2.316-1.623V6.346c0-1.168-0.887-1.622-2.316-1.622h-4.629c-1.428,0-2.316,0.454-2.316,1.622v3.548 c0,1.17,0.889,1.623,2.316,1.623H178.771z"/><path class="ao-logo__primary" d="M201.51,8.77V0.006h5.323v16.229h-5.323l-7.442-8.763v8.763h-5.324V0.006h5.324 L201.51,8.77z"/></g></svg>
                     </a>
                     <!--end logo -->
 
@@ -78,10 +77,10 @@
                         <ul class="navbar-nav ml-auto">
 
                             <li><a href="#home" data-tag="onClick|navigate|navbar|Home">Home</a></li>
-                            <li><a href="#questions" data-tag="onClick|navigate|navbar|Questions">Questions</a></li>
+                            <li><a href="#questions" data-tag="onClick|navigate|navbar|FAQ">FAQ</a></li>
                             <li><a href="#features" data-tag="onClick|navigate|navbar|Features">Features</a></li>
                             <li class="discover-link">
-                                <a href="#signup-section" class="external discover-btn" data-tag="onClick|navigate|navbar|SIGN UP">SIGN UP</a>
+                                <a href="#newsletter-form" class="external discover-btn" data-tag="onClick|navigate|navbar|SIGN UP">SIGN UP</a>
                             </li>
 
                         </ul>
@@ -103,7 +102,7 @@
     <!--end header -->
 
     <!--begin home section -->
-    <section id="home" class="home-section relative flex items-center h-screen w-full text-center pt-4">
+    <section id="home" class="home-section relative flex items-center h-screen ao-min-h-section w-full text-center pt-4">
 
         <div class="home-section-overlay pointer-events-none"></div>
 
@@ -133,12 +132,13 @@
                     <div class="mt-6 mx-auto max-w-4xl">
                         <p class="xs:text-lg lg:text-xl text-2xl leading-normal text-white ao-text-s-black">
                             Astropinion is a simple panel management tool that automatically
-                            identifies your users who want to participate in product research.
+                            identifies and manages the users who want to participate in your
+                            product research.
                         </p>
 
                         <a
                             class="btn-blue scrool mt-10 xs:text-lg lg:text-xl text-2xl"
-                            href="#signup-section"
+                            href="#newsletter-form"
                             data-tag="onClick|navigate|overlay|SIGN UP"
                             >
                             SIGN UP
@@ -318,9 +318,9 @@
                                 <div class="card-body mt-1">
                                     <p class="mb-3 text-blue-dove">
                                         While you can buy superficial research participants to pad
-                                        discovery interviews and answer surveys, those users are
-                                        not your real users. That leaves teams wondering if real
-                                        users would have given the same responses. 
+                                        discovery interviews and answer surveys, these users are
+                                        not authentic. That leaves teams wondering if real users
+                                        would have given the same responses. 
                                     </p>
                                     <p class="mb-3 text-blue-dove">
                                         Real users are also more motivated to give useful
@@ -525,9 +525,9 @@
                         <div class="newsletter_form_box">
                             
                             <!--begin success_box -->
-                            <p class="newsletter_success_box sm:text-lg text-xl leading-tight text-white font-dosis" style="display:none;">
+                            <!-- <p class="newsletter_success_box sm:text-lg text-xl leading-tight text-white font-dosis" style="display:none;">
                                 We hear you loud and clear. Thank you for subscribing!
-                            </p>
+                            </p> -->
                             <!--end success_box -->
                             
                             <!--begin newsletter-form -->
@@ -596,9 +596,9 @@
                 <!--begin col-md-12-->
                 <div class="col-md-12 text-center">
 
-                    <h2 class="text-xl text-blue-rhino">
+                    <h2 class="text-lg text-blue-rhino">
                         Real tools for real products.
-                        <i class="fas fa-space-shuttle text-red-burnt-umber ao-shuttle-upright ao-rotate-90 text-base"></i>
+                        <i class="fas fa-space-shuttle text-red-burnt-umber ao-shuttle-upright ao-rotate-90 text-sm"></i>
                         <span class="text-yellow-woodland">Scientists optional.</span>
                     </h2>
 

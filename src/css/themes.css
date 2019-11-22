@@ -101,59 +101,59 @@ h1, h2, h3, h4, h5, h6 {
     color: #000000 !important;
 }
 
-.navbar-toggler.theme-dark {
-    border-color: var(--blue-electric);
+.theme-dark .navbar-toggler {
+    border-color: transparent;
 }
 
-.navbar-toggler-icon.theme-dark i {
-    color: var(--blue-electric);
+.theme-dark .navbar-toggler-icon i {
+    color: var(--blue-shuttle);
 }
 
-.navbar-fixed-top.theme-dark {
+.theme-dark .navbar-fixed-top {
     background-color: #000000;
     border-bottom-color: var(--blue-shark);
 }
 
-.navbar-fixed-top.theme-light {
+.theme-light .navbar-fixed-top {
     background-color: var(--yellow-sand);
     border-bottom-color: var(--yellow-eagle);
 }
 
-.navbar-fixed-top.theme-dark .navbar-nav > li > a {
+.theme-dark .navbar-fixed-top .navbar-nav > li > a {
     color: var(--blue-shuttle);
 }
 
-.navbar-fixed-top.theme-dark .navbar-nav > li > a:hover,
-.navbar-fixed-top.theme-dark .navbar-nav .current a {
+.theme-dark .navbar-nav > li > a:hover,
+.theme-dark .navbar-nav .current a {
     color: var(--blue-electric) !important;
 }
 
-.navbar-fixed-top.theme-light .navbar-nav > li > a {
+.theme-light .navbar-nav > li > a {
     color: var(--yellow-olive);
 }
 
-.navbar-fixed-top.theme-light .navbar-nav > li > a:hover,
-.navbar-fixed-top.theme-light .navbar-nav .current a {
+.theme-light .navbar-fixed-top .navbar-nav > li > a:hover,
+.theme-light .navbar-fixed-top .navbar-nav .current a {
     color: var(--red-brick) !important;
 }
 
-.navbar-fixed-top.theme-dark .navbar-nav > li > a.discover-btn {
+.theme-dark .navbar-fixed-top .navbar-nav > li > a.discover-btn {
     color: #ffffff !important;
     border-color: var(--blue-electric);
     background-color: transparent;
 }
 
-.navbar-fixed-top.theme-dark .navbar-nav > li > a.discover-btn:hover {
+.theme-dark .navbar-fixed-top .navbar-nav > li > a.discover-btn:hover {
     background-color: var(--blue-electric);
 }
 
-.navbar-fixed-top.theme-light .navbar-nav > li > a.discover-btn {
+.theme-light .navbar-fixed-top .navbar-nav > li > a.discover-btn {
     color: #ffffff !important;
     border-color: var(--red-brick);
     background-color: var(--red-brick);
 }
 
-.navbar-fixed-top.theme-light .navbar-nav > li > a.discover-btn:hover {
+.theme-light .navbar-fixed-top .navbar-nav > li > a.discover-btn:hover {
     border-color: var(--red-espresso);
     background-color: var(--red-espresso);
 }

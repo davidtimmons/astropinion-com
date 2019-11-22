@@ -35,6 +35,8 @@
 
 .ao-text-s-black { text-shadow: 0 2px 8px #000; }
 .-ao-rotate-90 { transform: rotate(-90deg); }
+.ao-min-h-header { min-height: 75px; }
+.ao-min-h-section { min-height: 500px; }
 
 
 /* ==========================================================
@@ -46,6 +48,16 @@
  */
 .ao-logo {
     fill: currentColor;
+}
+
+/**
+ * 1. Chrome defaults the SVG image to 0 width when sizing based on height. Size the logo based on
+ *    width so it displays correctly.
+ */
+.ao-logo--size {
+    width: 100%;
+    max-width: 315px;
+    max-height: 24px;
 }
 
 .ao-logo .ao-logo__primary,
@@ -145,6 +157,18 @@
 @media (min-width: 769px) and (max-width: 991px) {
     .astronaut {
         margin-left: -40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ao-logo--size {
+        max-width: 245px;
+    }
+}
+
+@media (max-width: 375px) {
+    .ao-logo--size {
+        max-width: 172px;
     }
 }
 
