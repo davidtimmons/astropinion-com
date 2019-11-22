@@ -15,6 +15,9 @@ $(window).on('load', function(){
      */
     var trackPageEvents = function($) {
         var wrapTrackEvent = function(action, category, label) {
+            if (typeof gtag === 'undefined') {
+                return function() {};
+            }
             return function() {
                 gtag('event', action, {
                     'event_category': category,

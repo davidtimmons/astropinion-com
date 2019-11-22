@@ -25,3 +25,10 @@ const wow = new WOW({
     mobile: false, // Do not trigger animations on mobile devices.
 });
 wow.init();
+
+// Setup global site tag (gtag.js) for Google Analytics.
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+window.gtag = gtag;
+gtag('js', new Date());
+gtag('config', 'UA-151926575-2');
