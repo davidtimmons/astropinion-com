@@ -569,19 +569,18 @@ ul.footer_social li a i:hover {
     text-align: center;
     /* padding-top: 240px; */
     /* padding-bottom: 200px; */
-    background: url(../images/research.jpg) center center no-repeat; /* Photo by Startup Stock Photos from Pexels */
-    background-size: cover;
 }
 
 .home-section-overlay{
-    background-color: var(--red-espresso);
     width: 100%;
-    opacity: 0.73;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    background-position: left 0px top 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* .home-section h1{
@@ -1400,8 +1399,9 @@ p.testimonial-single{
 
 /* e) Accordion Tabs */
 
-.card{
-    border:none;
+.card {
+    border-width: 2px;
+    border-style: solid;
 }
 
 .card-header {
@@ -1415,7 +1415,7 @@ p.testimonial-single{
 .card-header h5 .btn-link {
     padding: 0;
     /* font-size: 19px; */
-    font-weight: 600;
+    /* font-weight: 600; */
     /* color: #071e55; */
     /* background-color: transparent; */
 }

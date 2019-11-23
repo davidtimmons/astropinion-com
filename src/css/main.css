@@ -67,14 +67,14 @@
     fill: #000000;
 }
 
-.theme-dark .ao-logo .ao-logo__primary {
-    fill: var(--red-brick);
+.theme-muted .ao-logo .ao-logo__primary {
+    fill: var(--red-burnt-umber);
 }
 
-.theme-dark .ao-logo .ao-logo__secondary,
-.theme-dark .ao-logo .ao-logo__accent,
-.theme-dark .ao-logo .ao-logo__tm {
-    fill: var(--yellow-sand);
+.theme-muted .ao-logo .ao-logo__secondary,
+.theme-muted .ao-logo .ao-logo__accent,
+.theme-muted .ao-logo .ao-logo__tm {
+    fill: #ffffff;
 }
 
 .theme-light .ao-logo .ao-logo__primary {
@@ -92,12 +92,44 @@
    04. COMPOUND STYLES
    ========================================================== */
 
-.ao-shuttle-shift {
+.ao-shuttle-rotate {
     transform: rotate(-45deg) translate(3px);
 }
 
 .ao-shuttle-upright {
     transform: rotate(-90deg) translateX(2px);
+}
+
+.ao-shuttle-cta {
+    display: inline-block;
+    text-align: center;
+    margin-left: 2px;
+    border: none;
+    border-radius: 50%;
+    min-width: 18px;
+    width: 18px;
+    min-height: 18px;
+    height: 18px;
+    line-height: 17px;
+    padding: 0;
+}
+
+.ao-shuttle-cta > i {
+    position: relative;
+    top: -2px;
+    right: 0px;
+    font-size: 10px;
+}
+
+/**
+ * Positions the shuttle correctly in Firefox. This is a Mozilla-only CSS extension.
+ * See: https://stackoverflow.com/questions/952861/targeting-only-firefox-with-css
+ */
+@-moz-document url-prefix() {
+    .ao-shuttle-cta > i {
+        top: -3px;
+        right: -1px;
+    }
 }
 
 /**
