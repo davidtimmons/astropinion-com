@@ -32,3 +32,9 @@ function gtag() { dataLayer.push(arguments); }
 window.gtag = gtag;
 gtag('js', new Date());
 gtag('config', 'UA-151926575-2');
+
+// Setup LinkedIn Insight Tag.
+const _linkedin_partner_id = "1745737";
+window._linkedin_partner_id = _linkedin_partner_id;
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
