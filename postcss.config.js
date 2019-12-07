@@ -13,7 +13,10 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     content: [ './src/**/*.html' ],
   
     // Include any special characters in this regular expression beyond what Tailwind CSS uses.
-    defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+    defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+
+    // Prevent the purge from removing this Font Awesome class.
+    whitelist: ['fa-globe-americas'],
 });
 
 module.exports = {
