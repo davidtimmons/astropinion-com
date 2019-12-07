@@ -34,6 +34,7 @@
    ========================================================== */
 
 .ao-text-s-black { text-shadow: 0 2px 8px #000; }
+.ao-transparent-white { background-color: rgba(255, 255, 255, 0.1); }
 .-ao-rotate-90 { transform: rotate(-90deg); }
 .ao-min-h-header { min-height: 75px; }
 .ao-min-h-section { min-height: 500px; }
