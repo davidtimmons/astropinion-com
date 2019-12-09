@@ -1144,7 +1144,7 @@ p.contact_success_box{
 .newsletter_form_wrapper{
     width:100%;
     text-align:center;
-    margin-bottom:30px;
+    /* margin-bottom:30px; */
 }
 
 .newsletter_form_box{
