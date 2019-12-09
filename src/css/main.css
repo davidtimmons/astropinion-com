@@ -117,16 +117,16 @@
 
 .ao-shuttle-cta > i {
     position: relative;
-    top: -2px;
+    top: -1px;
     right: 0px;
     font-size: 10px;
 }
 
 /**
- * Positions the shuttle correctly in Firefox. This is a Mozilla-only CSS extension.
+ * Positions the shuttle correctly in Firefox.
  * See: https://stackoverflow.com/questions/952861/targeting-only-firefox-with-css
  */
-@-moz-document url-prefix() {
+@supports (-moz-appearance:none) {
     .ao-shuttle-cta > i {
         top: -3px;
         right: -1px;
